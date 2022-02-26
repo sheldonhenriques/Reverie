@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTransparent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    tools:context=".FormFilling"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imagedp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/dp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/usercircle"
+        android:hint="@string/username"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/EmailId"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/emailimg"
+        android:hint="@string/emailid"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/pswdloc"
+        android:hint="@string/password"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/pswdconf"
+        android:hint="ConfirmPassword"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/Radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="20sp" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Preferences:"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meditation"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anxiety"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Booster"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/cap"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryLight"
+        android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+        android:text="Capture"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryLight"
+        android:text="SIGN UP"
+        android:layout_marginLeft="50dp"
+        android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
